@@ -7,11 +7,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/manage")
+@WebServlet("/2018214304/manage")
 public class ManagerServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("WEB-INF/manager.html")
+        req.getRequestDispatcher("/WEB-INF/manager.html")
                 .forward(req, resp);
     }
 }

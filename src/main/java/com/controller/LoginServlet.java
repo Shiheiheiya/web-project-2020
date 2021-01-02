@@ -1,6 +1,7 @@
 package com.controller;
 
 import com.entity.User;
+import javafx.application.Application;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/login")
+@WebServlet("/2018214304/login")
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -25,9 +26,9 @@ public class LoginServlet extends HttpServlet {
         if("admin".equals(userName) && "admin".equals(password)){
             User u = new User("Baky");
             req.getSession().setAttribute("user",u);
-            url = "/manage";
+            url = "/2018214304/manage";
         } else{
-            url = "/login";
+            url = "/2018214304/login";
         }
         resp.sendRedirect(url);
     }
