@@ -25,7 +25,7 @@ public class LoginServlet extends HttpServlet {
         if("admin".equals(userName) && "admin".equals(password)){
             User u = new User("Baky");
             req.getSession().setAttribute("user",u);
-            url = "/manager";
+            url = "/manage";
         } else{
             url = "/login";
         }
