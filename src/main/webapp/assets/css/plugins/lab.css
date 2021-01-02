@@ -1,0 +1,13 @@
+.lab{
+    width: 100%;
+}
+.lab-img img{
+    width: 750px;
+    height: 450px;
+    margin-bottom: 20px;
+}
+.lab-content p{
+    font-size: 16px;
+    color: white;
+    text-indent: 2em;
+}
