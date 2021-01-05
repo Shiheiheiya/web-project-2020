@@ -12,11 +12,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-@WebServlet("/addNews")
+@WebServlet("/manage/addNews")
 public class addNewsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/WEB-INF/addNews.jsp")
+        req.getRequestDispatcher("/WEB-INF/manage/addNews.jsp")
                 .forward(req, resp);
     }
     @Override
@@ -34,6 +34,6 @@ public class addNewsServlet extends HttpServlet {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-        resp.sendRedirect(req.getContextPath() + "/manage");
+        resp.sendRedirect(req.getContextPath() + "/manage/manage");
     }
 }

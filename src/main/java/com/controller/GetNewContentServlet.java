@@ -16,7 +16,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
-@WebServlet("/getNewContent")
+@WebServlet("/manage/getNewContent")
 public class GetNewContentServlet extends HttpServlet {
     private static Logger logger = Logger.getLogger(ManagerServlet.class.getName());
     @Override
@@ -41,7 +41,7 @@ public class GetNewContentServlet extends HttpServlet {
             throwables.printStackTrace();
         }
         req.setAttribute("news", news);
-        req.getRequestDispatcher("/WEB-INF/newsSelect.jsp")
+        req.getRequestDispatcher("/WEB-INF/manage/newsSelect.jsp")
                 .forward(req, resp);
     }
 }

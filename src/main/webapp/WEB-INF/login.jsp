@@ -1,3 +1,11 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: 李高晗
+  Date: 2021/1/5
+  Time: 23:06
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -76,9 +84,6 @@
 </head>
 
 <body>
-
-
-
 <!-- Clients & Testimonials Start -->
 <div class="section section-padding pt-0 light-bg" style="margin-top: 20px;">
     <div class="spacer bg-white"></div>
@@ -96,7 +101,7 @@
                             <input type="text" name="username" placeholder=" 请输入用户名">
                         </div>
                     </div>
-            
+
                     <div class="form-group">
                         <label class="form-label">密码</label>
                         <div class="form-input">
@@ -109,9 +114,6 @@
         </div>
     </div>
 </div>
-
-
-
 </body>
-
 </html>
+

@@ -15,7 +15,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
-@WebServlet("/updateNews")
+@WebServlet("/manage/updateNews")
 public class UpdateNewsServlet extends HttpServlet {
     private static Logger logger = Logger.getLogger(ManagerServlet.class.getName());
 
@@ -41,7 +41,7 @@ public class UpdateNewsServlet extends HttpServlet {
             throwables.printStackTrace();
         }
         req.setAttribute("news", news);
-        req.getRequestDispatcher("/WEB-INF/updateNews.jsp")
+        req.getRequestDispatcher("/WEB-INF/manage/updateNews.jsp")
                 .forward(req, resp);
     }
     @Override
@@ -61,6 +61,6 @@ public class UpdateNewsServlet extends HttpServlet {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-        resp.sendRedirect(req.getContextPath()+ "/manage");
+        resp.sendRedirect(req.getContextPath()+ "/manage/manage");
     }
 }

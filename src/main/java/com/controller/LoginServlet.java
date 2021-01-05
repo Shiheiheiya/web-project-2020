@@ -14,7 +14,7 @@ import java.io.IOException;
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/WEB-INF/login.html")
+        req.getRequestDispatcher("/WEB-INF/login.jsp")
                 .forward(req, resp);
     }
 
@@ -26,7 +26,7 @@ public class LoginServlet extends HttpServlet {
         if("admin".equals(userName) && "admin".equals(password)){
             User u = new User("admin");
             req.getSession().setAttribute("user",u);
-            url = req.getContextPath() + "/manage";
+            url = req.getContextPath() + "/manage/manage";
         } else{
             url = req.getContextPath() + "/login";
         }

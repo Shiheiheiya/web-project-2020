@@ -15,10 +15,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
-@WebServlet("/manage/manage")
-public class ManagerServlet extends HttpServlet {
+@WebServlet("/news")
+public class ClientNewsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<News> news = new ArrayList<>();
@@ -35,7 +34,7 @@ public class ManagerServlet extends HttpServlet {
             e.printStackTrace();
         }
         req.setAttribute("news", news);
-        req.getRequestDispatcher("/WEB-INF/manage/manager.jsp")
+        req.getRequestDispatcher("/news.jsp")
                 .forward(req, resp);
     }
 }

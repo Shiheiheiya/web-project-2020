@@ -15,7 +15,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
-@WebServlet("/delNews")
+@WebServlet("/manage/delNews")
 public class delNewsServlet extends HttpServlet {
     private static Logger logger = Logger.getLogger(ManagerServlet.class.getName());
     @Override
@@ -28,6 +28,6 @@ public class delNewsServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        resp.sendRedirect(req.getContextPath() + "/manage");
+        resp.sendRedirect(req.getContextPath() + "/manage/manage");
     }
 }
