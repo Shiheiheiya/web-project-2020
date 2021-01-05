@@ -1,14 +1,16 @@
 <%@ page pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%--新闻查询--%>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
-
+    <c:url var="base" value="/"/>
+    <base href="${base}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新闻管理</title>
+    <title>新闻修改</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
@@ -28,6 +30,17 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- partial -->
     <link rel="stylesheet" href="assets/css/plugins/table.css">
+    <style>
+        .update form{
+            color: white;
+            font-size: 20px;
+            width: 100%;
+        }
+        .update form input{
+            background-color: white;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -239,44 +252,18 @@
                     <h6 class="subtitle"> <span></span>软件工程专业<span></span> </h6>
                     <h4 class="title text-white">新闻公告</h4>
                 </div>
-                <a href="#" class="btn btn-add">添加新闻</a>
-
-                <div class="table">
-                    <div class="main">
-                        <table>
-                            <thead>
-                            <tr style="background-color: #004079;">
-                                <th>#</th>
-                                <th>标题</th>
-                                <th>编辑人</th>
-                                <th>操作</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-
-                            <tr>
-                                <td>1</td>
-                                <td>2金1银5铜！我校创“挑战杯”参赛史最佳成绩</td>
-                                <td>李高晗</td>
-                                <td><a href="#" class="btn btn-notify">修改</a> <a href="#" class="btn">删除</a></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>东林学子在第五届中国高校计算机大赛——团体程序设计天梯赛中获佳绩</td>
-                                <td>李高晗</td>
-                                <td><a href="#" class="btn btn-notify">修改</a> <a href="#" class="btn">删除</a></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>计算机基础教育与实验中心党支部开展 “网上重走长征路”主题活动</td>
-                                <td>李高晗</td>
-                                <td><a href="#" class="btn btn-notify">修改</a> <a href="#" class="btn">删除</a></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="update">
+                    <h3>Update</h3>
+                    修改指定用户
+                    <form action="updateNews" method="post">
+                        new id:<input type="text" name="nid" value="${news.id}" hidden>${news.id}<br>
+                        new title:<input type="text" name="title" value="${news.title}"><br>
+                        new content:<input type="text" name="content" value="${news.content}"><br>
+                        new author:<input type="text" name="author" value="${news.author}"><br>
+                        <br>
+                        <button type="btn btn-notify">提交</button>
+                    </form>
                 </div>
-
             </div>
         </div>
     </div>

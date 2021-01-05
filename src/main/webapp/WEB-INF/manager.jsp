@@ -1,8 +1,12 @@
+<%@ page pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
-
+    <c:url var="base" value="/"/>
+    <base href="${base}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>新闻管理</title>
@@ -236,7 +240,7 @@
                     <h6 class="subtitle"> <span></span>软件工程专业<span></span> </h6>
                     <h4 class="title text-white">新闻公告</h4>
                 </div>
-                <a href="#" class="btn btn-add">添加新闻</a>
+                <a href="addNews" class="btn btn-add">添加新闻</a>
 
                 <div class="table">
                     <div class="main">
@@ -250,24 +254,14 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>2金1银5铜！我校创“挑战杯”参赛史最佳成绩</td>
-                                <td>李高晗</td>
-                                <td><a href="#" class="btn btn-notify">修改</a> <a href="#" class="btn">删除</a></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>东林学子在第五届中国高校计算机大赛——团体程序设计天梯赛中获佳绩</td>
-                                <td>李高晗</td>
-                                <td><a href="#" class="btn btn-notify">修改</a> <a href="#" class="btn">删除</a></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>计算机基础教育与实验中心党支部开展 “网上重走长征路”主题活动</td>
-                                <td>李高晗</td>
-                                <td><a href="#" class="btn btn-notify">修改</a> <a href="#" class="btn">删除</a></td>
-                            </tr>
+                            <c:forEach items="${news}" var="n">
+                                <tr>
+                                    <td>${n.id}</td>
+                                    <td>${n.title}</td>
+                                    <td>${n.author}</td>
+                                    <td><a href="getNewContent?nid=${n.id}" class="btn btn-notify">查看</a> <a href="updateNews?nid=${n.id}" class="btn">修改</a> <a href="delNews?nid=${n.id}" class="btn">删除</a></td>
+                                </tr>
+                            </c:forEach>
                             </tbody>
                         </table>
                     </div>
@@ -362,3 +356,4 @@
 </body>
 
 </html>
+

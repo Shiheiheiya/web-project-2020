@@ -7,16 +7,19 @@ public class News {
     private String title;
     private String content;
     private String author;
-    private Date creatTime;
-    private Date updateTime;
+    private Date create_time;
+    private Date update_time;
 
-    public News(int id, String title, String content, String author, Date creatTime, Date updateTime) {
+    public News() {
+    }
+
+    public News(int id, String title, String content, String author, Date create_time, Date update_time) {
         this.id = id;
         this.title = title;
         this.content = content;
         this.author = author;
-        this.creatTime = creatTime;
-        this.updateTime = updateTime;
+        this.create_time = create_time;
+        this.update_time = update_time;
     }
 
     public int getId() {
@@ -51,19 +54,19 @@ public class News {
         this.author = author;
     }
 
-    public Date getCreatTime() {
-        return creatTime;
+    public Date getCreate_time() {
+        return create_time;
     }
 
-    public void setCreatTime(Date creatTime) {
-        this.creatTime = creatTime;
+    public void setCreate_time(Date creat_time) {
+        this.create_time = creat_time;
     }
 
-    public Date getUpdateTime() {
-        return updateTime;
+    public Date getUpdate_time() {
+        return update_time;
     }
 
-    public void setUpdateTime(Date updateTime) {
-        this.updateTime = updateTime;
+    public void setUpdate_time(Date update_time) {
+        this.update_time = update_time;
     }
 }

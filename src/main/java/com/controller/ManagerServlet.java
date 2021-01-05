@@ -15,6 +15,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 @WebServlet("/manage")
 public class ManagerServlet extends HttpServlet {
@@ -24,9 +25,10 @@ public class ManagerServlet extends HttpServlet {
         String sql = "select * from news";
         try(Connection conn = DataSourceUtils.getConnection();
             PreparedStatement st = conn.prepareStatement(sql);
-            ResultSet rs = st.executeQuery()) {
+            ResultSet rs = st.executeQuery()
+        ) {
             while (rs.next()){
-                News news1 = new News(rs.getInt("id"),rs.getString("title"),rs.getString("content"),rs.getString("author"),rs.getTimestamp("creatTime"),rs.getTimestamp("updateTime"));
+                News news1 = new News(rs.getInt("id"),rs.getString("title"),rs.getString("content"),rs.getString("author"),rs.getTimestamp("create_time"),rs.getTimestamp("update_time"));
                 news.add(news1);
             }
         } catch (SQLException e) {
