@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/2018214304/login")
+@WebServlet("/login")
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -24,7 +24,7 @@ public class LoginServlet extends HttpServlet {
         String password = req.getParameter("pwd");
         String url;
         if("admin".equals(userName) && "admin".equals(password)){
-            User u = new User("Baky");
+            User u = new User("admin");
             req.getSession().setAttribute("user",u);
             url = "/2018214304/manage";
         } else{

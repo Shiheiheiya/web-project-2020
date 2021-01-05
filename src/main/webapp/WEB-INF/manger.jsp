@@ -1,3 +1,6 @@
+<%@ page pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -250,6 +253,7 @@
                             </tr>
                             </thead>
                             <tbody>
+
                             <tr>
                                 <td>1</td>
                                 <td>2金1银5铜！我校创“挑战杯”参赛史最佳成绩</td>
@@ -362,3 +366,4 @@
 </body>
 
 </html>
+
