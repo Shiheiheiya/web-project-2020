@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/login")
+@WebServlet("/manage/login")
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
             req.getSession().setAttribute("user",u);
             url = req.getContextPath() + "/manage/manage";
         } else{
-            url = req.getContextPath() + "/login";
+            url = req.getContextPath() + "/manage/login";
         }
         resp.sendRedirect(url);
     }

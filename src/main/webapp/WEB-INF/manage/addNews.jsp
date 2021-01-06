@@ -13,7 +13,7 @@
     <title>新闻添加</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/dog.jpg">
 
     <!-- partial:partial/__stylesheets.html -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">

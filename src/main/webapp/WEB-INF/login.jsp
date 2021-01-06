@@ -1,22 +1,17 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 李高晗
-  Date: 2021/1/5
-  Time: 23:06
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
-
+    <c:url var="base" value="/"/>
+    <base href="${base}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/github.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/dog.jpg">
 
     <!-- partial:partial/__stylesheets.html -->
     <!--   下面引入注意去掉“/”路径错误！！！！！   -->
@@ -64,7 +59,7 @@
         }
 
         .form-input input:focus{
-            border: 2px solid red;
+            border: 2px solid blue;
         }
 
         .form-input [type="radio"]{
@@ -94,7 +89,7 @@
                     <h4 class="title text-white">请登录</h4>
                 </div>
 
-                <form  action="login" method="post">
+                <form  action="manage/login" method="post">
                     <div class="form-group">
                         <label class="form-label">用户名</label>
                         <div class="form-input">

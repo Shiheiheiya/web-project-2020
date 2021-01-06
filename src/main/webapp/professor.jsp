@@ -10,7 +10,7 @@
     <title>东北林业大学信息与计算机工程学院</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/dog.jpg">
 
     <!-- partial:partial/__stylesheets.html -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
@@ -71,5 +71,16 @@
 <div id="footer">
     <%@include file="/footer.jsp" %>
 </div>
+<script>
+    $(".fab").hover(() => {
+        $(".fab-btn a i").text("cancel");
+        $('.fab-btn .material-icons').css("transform","rotate(180deg)");
+        $(".fab-menu").fadeIn(500);
+    },function(){
+        $(".fab-btn a i").text("account_circle");
+        $('.fab-btn .material-icons').css("transform","rotate(0deg)");
+        $(".fab-menu").fadeOut(500);
+    })
+</script>
 </body>
 </html>

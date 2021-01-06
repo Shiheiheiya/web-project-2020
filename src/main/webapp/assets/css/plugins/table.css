@@ -33,6 +33,12 @@ a.btn-notify{
 a.btn:hover {
     background-color: rgb(228, 10, 10);
 }
+a .btn-modify{
+    background-color: #f3ff74;
+}
+a .btn-modify:hover{
+    background-color: yellow;
+}
 a.btn-notify:hover{
     background-color: green;
 }

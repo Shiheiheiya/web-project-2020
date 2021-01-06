@@ -18,7 +18,7 @@
     <title>东北林业大学信息与计算机工程学院</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/dog.jpg">
 
     <!-- partial:partial/__stylesheets.html -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
@@ -56,7 +56,7 @@
                                 <p class="text-white">自强、务实</p>
                                 <p class="text-white">尚学、进取</p>
                                 <div class="section-button d-flex align-items-center">
-                                    <a href="prof-intro.html" class="sigma_btn-custom">Learn More<i class="far fa-arrow-right"></i> </a>
+                                    <a href="prof-intro.jsp" class="sigma_btn-custom">Learn More<i class="far fa-arrow-right"></i> </a>
                                 </div>
                             </div>
                             <div class="offset-lg-2 col-lg-4 d-none d-lg-block">
@@ -104,7 +104,7 @@
 
                     <div class="row">
                         <div class="col-lg-3">
-                            <a href="prof-intro.html">
+                            <a href="prof-intro.jsp">
                                 <div class="sigma_icon-block text-center light icon-block-7 light">
                                     <div class="icon-wrapper">
                                         <span class="stroke-text stroke-text-dark">01</span>
@@ -116,7 +116,7 @@
                             </a>
                         </div>
                         <div class="col-lg-3">
-                            <a href="professor.html">
+                            <a href="professor.jsp">
                                 <div class="sigma_icon-block text-center light icon-block-7 light">
                                     <div class="icon-wrapper">
                                         <span class="stroke-text stroke-text-dark">02</span>
@@ -128,7 +128,7 @@
                             </a>
                         </div>
                         <div class="col-lg-3">
-                            <a href="lab-923.html">
+                            <a href="lab-923.jsp">
                                 <div class="sigma_icon-block text-center light icon-block-7 light">
                                     <div class="icon-wrapper">
                                         <span class="stroke-text stroke-text-dark">03</span>
@@ -186,37 +186,37 @@
     </div>
     <!-- portfolio end -->
 
-    <!-- Services Start -->
-    <div class="section section-padding pt-0">
-        <div class="container">
+<%--    <!-- Services Start -->--%>
+<%--    <div class="section section-padding pt-0">--%>
+<%--        <div class="container">--%>
 
-            <div class="section-title text-center">
-                <h6 class="subtitle"> <span></span>软件工程专业<span></span> </h6>
-                <h4 class="title">新闻公告</h4>
-            </div>
+<%--            <div class="section-title text-center">--%>
+<%--                <h6 class="subtitle"> <span></span>软件工程专业<span></span> </h6>--%>
+<%--                <h4 class="title">新闻公告</h4>--%>
+<%--            </div>--%>
 
-            <div class="row">
+<%--            <div class="row">--%>
 
-                <c:forEach items="news" var="n" varStatus="v">
-                    <c:when test="v.count<=6">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="sigma_service style-3">
-                                <div class="sigma_service-thumb">
-                                    <i class="flaticon-decorating"></i>
-                                </div>
-                                <div class="sigma_service-body">
-                                    <h5>新闻中心</h5>
-                                    <p>${n.title}</p>
-                                    <a href="http://news.nefu.edu.cn/info/1011/16353.htm" class="btn-link"> Read More <i class="far fa-arrow-right"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </c:when>
-                </c:forEach>
+<%--                <c:forEach items="news" var="n" varStatus="v">--%>
+<%--                    <c:when test="v.count<=6">--%>
+<%--                        <div class="col-lg-4 col-md-6">--%>
+<%--                            <div class="sigma_service style-3">--%>
+<%--                                <div class="sigma_service-thumb">--%>
+<%--                                    <i class="flaticon-decorating"></i>--%>
+<%--                                </div>--%>
+<%--                                <div class="sigma_service-body">--%>
+<%--                                    <h5>新闻中心</h5>--%>
+<%--                                    <p>${n.title}</p>--%>
+<%--                                    <a href="manage/getNewContent?nid=${n.id}" class="btn-link"> Read More <i class="far fa-arrow-right"></i> </a>--%>
+<%--                                </div>--%>
+<%--                            </div>--%>
+<%--                        </div>--%>
+<%--                    </c:when>--%>
+<%--                </c:forEach>--%>
 
-            </div>
-        </div>
-    </div>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--    </div>--%>
     <!-- Services End -->
 
     <!-- Team Start -->
@@ -240,7 +240,7 @@
                             <p>副教授</p>
                             <div class="sigma_team-sm">
                                 <ul class="sigma_sm">
-                                    <li> <a href="asso-professor.html"> Learn More</a> </li>
+                                    <li> <a href="asso-professor.jsp"> Learn More</a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -257,7 +257,7 @@
                             <p>副教授</p>
                             <div class="sigma_team-sm">
                                 <ul class="sigma_sm">
-                                    <li> <a href="asso-professor.html"> Learn More</a> </li>
+                                    <li> <a href="asso-professor.jsp"> Learn More</a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -274,7 +274,7 @@
                             <p>副教授</p>
                             <div class="sigma_team-sm">
                                 <ul class="sigma_sm">
-                                    <li> <a href="asso-professor.html"> Learn More</a> </li>
+                                    <li> <a href="asso-professor.jsp"> Learn More</a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -291,7 +291,7 @@
                             <p>讲师</p>
                             <div class="sigma_team-sm">
                                 <ul class="sigma_sm">
-                                    <li> <a href="lecturer.html"> Learn More</a> </li>
+                                    <li> <a href="lecturer.jsp"> Learn More</a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -308,7 +308,7 @@
                             <p>副教授</p>
                             <div class="sigma_team-sm">
                                 <ul class="sigma_sm">
-                                    <li> <a href="asso-professor.html"> Learn More</a> </li>
+                                    <li> <a href="asso-professor.jsp"> Learn More</a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -325,7 +325,7 @@
                             <p>副教授</p>
                             <div class="sigma_team-sm">
                                 <ul class="sigma_sm">
-                                    <li> <a href="asso-professor.html"> Learn More</a> </li>
+                                    <li> <a href="asso-professor.jsp"> Learn More</a> </li>
                                 </ul>
                             </div>
                         </div>

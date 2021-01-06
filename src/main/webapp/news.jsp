@@ -13,7 +13,7 @@
     <title>新闻通告</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/dog.jpg">
 
     <!-- partial:partial/__stylesheets.html -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
@@ -48,7 +48,7 @@
                     <h6 class="subtitle"> <span></span>软件工程专业<span></span> </h6>
                     <h4 class="title text-white">新闻公告</h4>
                 </div>
-                <a href="login" class="btn btn-add">管理员登录</a>
+                <a href="manage/manage" class="btn btn-add">管理员登录</a>
 
                 <div class="table">
                     <div class="main">

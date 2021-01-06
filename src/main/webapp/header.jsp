@@ -139,6 +139,9 @@
                 <li class="menu-item">
                     <a href="news" style="color: white; font-size: 20px;">新闻公告</a>
                 </li>
+                <li class="menu-item">
+                    <a href="manage/manage" style="color: white; font-size: 20px;">管理员登录</a>
+                </li>
             </ul>
 
             <!-- Button & Phone -->

@@ -12,7 +12,7 @@
     <title>新闻管理</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/dog.jpg">
 
     <!-- partial:partial/__stylesheets.html -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
@@ -66,7 +66,7 @@
                                     <td>${n.id}</td>
                                     <td>${n.title}</td>
                                     <td>${n.author}</td>
-                                    <td><a href="manage/getNewContent?nid=${n.id}" class="btn btn-notify">查看</a> <a href="manage/updateNews?nid=${n.id}" class="btn">修改</a> <a href="manage/delNews?nid=${n.id}" class="btn">删除</a></td>
+                                    <td><a href="manage/getNewContent?nid=${n.id}" class="btn btn-notify">查看</a> <a href="manage/updateNews?nid=${n.id}" class="btn btn-modify">修改</a> <a href="manage/delNews?nid=${n.id}" class="btn">删除</a></td>
                                 </tr>
                             </c:forEach>
                             </tbody>

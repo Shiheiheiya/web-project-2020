@@ -13,7 +13,7 @@
     <title>新闻修改</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/dog.jpg">
 
     <!-- partial:partial/__stylesheets.html -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
@@ -60,8 +60,7 @@
                     <h4 class="title text-white">新闻公告</h4>
                 </div>
                 <div class="update">
-                    <h3>Update</h3>
-                    修改指定用户
+                    <h3 style="color: white">请对信息进行修改</h3>
                     <form action="manage/updateNews" method="post">
                         new id:<input type="text" name="nid" value="${news.id}" hidden>${news.id}<br>
                         new title:<input type="text" name="title" value="${news.title}"><br>
