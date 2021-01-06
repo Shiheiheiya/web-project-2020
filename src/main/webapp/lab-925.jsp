@@ -39,8 +39,8 @@
 <nav class="fab">
     <div class="fab-btn"><a href="#"><i class="material-icons">desktop_mac</i></a></div>
     <div class="fab-menu">
-        <a href="lab-923.html"><p>923实验室</p></a>
-        <a href="lab-925.html"><p>925实验室</p></a>
+        <a href="lab-923.jsp"><p>923实验室</p></a>
+        <a href="lab-925.jsp"><p>925实验室</p></a>
     </div>
 </nav>
 <!-- Clients & Testimonials Start -->

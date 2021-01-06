@@ -16,7 +16,7 @@ import java.sql.SQLException;
 import java.util.logging.Logger;
 
 @WebServlet("/manage/delNews")
-public class delNewsServlet extends HttpServlet {
+public class DelNewsServlet extends HttpServlet {
     private static Logger logger = Logger.getLogger(ManagerServlet.class.getName());
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

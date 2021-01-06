@@ -38,9 +38,9 @@
 <nav class="fab">
     <div class="fab-btn"><a href="#"><i class="material-icons">account_circle</i></a></div>
     <div class="fab-menu">
-        <a href="professor.html"><p>教授</p></a>
-        <a href="asso-professor.html"><p>副教授</p></a>
-        <a href="lecturer.html"><p>讲师</p></a>
+        <a href="professor.jsp"><p>教授</p></a>
+        <a href="asso-professor.jsp"><p>副教授</p></a>
+        <a href="lecturer.jsp"><p>讲师</p></a>
     </div>
 </nav>
 <!-- Clients & Testimonials Start -->

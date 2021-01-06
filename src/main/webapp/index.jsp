@@ -164,7 +164,7 @@
             <div class="portfolio-slider">
 
                 <div class="sigma_portfolio-item">
-                    <img src="https://icec.nefu.edu.cn/images/20181228105917.jpg" alt="portfolio">
+                    <img src="assets/img/slider/1.jpg" alt="portfolio" style="width: 100%;height: 300px">
                     <div class="sigma_portfolio-item-content">
                         <div class="sigma_portfolio-item-content-inner">
                             <p>信息学院大合唱</p>
@@ -172,15 +172,45 @@
                     </div>
                 </div>
                 <div class="sigma_portfolio-item">
-                    <img src="assets/img/slider/7.jpg" alt="portfolio">
+                    <img src="assets/img/slider/2.jpg" alt="portfolio" style="width: 100%;height: 300px">
                     <div class="sigma_portfolio-item-content">
                         <div class="sigma_portfolio-item-content-inner">
                             <p>东林新媒体</p>
                         </div>
                     </div>
                 </div>
-
-
+                <div class="sigma_portfolio-item">
+                    <img src="assets/img/slider/3.jpg" alt="portfolio" style="width: 100%;height: 300px">
+                    <div class="sigma_portfolio-item-content">
+                        <div class="sigma_portfolio-item-content-inner">
+                            <p>东北林业大学</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sigma_portfolio-item">
+                    <img src="assets/img/slider/4.jpg" alt="portfolio" style="width: 100%;height: 300px">
+                    <div class="sigma_portfolio-item-content">
+                        <div class="sigma_portfolio-item-content-inner">
+                            <p>东林挑战杯</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sigma_portfolio-item">
+                    <img src="assets/img/slider/5.jpg" alt="portfolio" style="width: 100%;height: 300px">
+                    <div class="sigma_portfolio-item-content">
+                        <div class="sigma_portfolio-item-content-inner">
+                            <p>2021快乐</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sigma_portfolio-item">
+                    <img src="assets/img/slider/6.jpg" alt="portfolio" style="width: 100%;height: 300px">
+                    <div class="sigma_portfolio-item-content">
+                        <div class="sigma_portfolio-item-content-inner">
+                            <p>2021快乐</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
